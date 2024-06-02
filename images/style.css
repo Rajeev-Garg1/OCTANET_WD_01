@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #111;
+    background: #fff;
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+#top{
+    min-height: 60vh;
+    width:  100%;
+    background-image: url(https://images.unsplash.com/photo-1704871132791-ba6225b89ef3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#overlay{
+    position: relative;
+    min-height:inherit;
+    width: 100%;
+    background-color: #9ab7ed48;
+}
+#text{
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 20%;
+    padding: 0 10vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+#text h1{
+    font-weight: 500;
+    font-size: 6vw;
+}
+#textright{
+    width:60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#textright p{
+
+    font-size: 12px;
+    width: 40%;
+}
+#textright i{
+    color:white;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+#bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: blue;
+}
+#b1{
+    padding: 30px;
+    min-height:inherit;
+    width: 25%; 
+    background-color: white;
+}
+
+#b2{
+    min-height:inherit;
+    width: 25%;
+    background-image: url(https://images.unsplash.com/photo-1546556333-f91f9e7331d7?q=80&w=1030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D );
+    background-position: center;
+    background-size: cover;
+}
+#b3{
+   min-height:inherit;
+    width: 20%;
+    background-color: pink;
+}
+#b3top{
+    min-height: 20vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#b3top p{
+    color: rgb(0, 0, 0);
+    font-weight: 800; 
+}
+#b3bottom{
+    min-height: 20vh;
+    width: 100%;
+   background-image: url(https://images.unsplash.com/photo-1593433408026-2271b1b86cb3?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-size: cover;
+   background-position: center;
+}
+#b4{
+    min-height:inherit;
+    width: 30%;
+    background-color: gray;
+    color: white;
+    padding: 30px;
+}
+
+.notify{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.notify #photo{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+}
+.notify p{
+ width: 86%; 
+ font-size: 15px;  
+}
+@media(max-width: 500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #text h1{
+        display: none;
+        font-size: 10vw;
+    }
+    #overlay #text #textright{
+        display: block;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright #icons{
+        margin-top: 30px;
+    }
+    #bottom{
+        min-height: 20vh;
+        flex-direction: column;
+    }
+    #b1{
+        width: 100%;
+    }
+    #b2{
+        width:100%;
+    }
+    #b3{
+        flex-direction: column;
+        width:100%;
+    }
+    #b4{
+        width:100%;
+    }
+}
